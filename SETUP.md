@@ -14,20 +14,44 @@ Abrí la **Terminal** y pegá:
 curl -fsSL https://openclaw.ai/install.sh | bash
 ```
 
-## 2) Onboarding (elegí modelo + pegá tu API key)
+## 2) El cerebro: tu suscripción Claude Max (SIN API key) — recomendado
 
-```bash
-openclaw onboard --install-daemon
-```
+Si ya pagás **Claude Max/Pro**, podés usar **esa misma suscripción** como el cerebro de tu agente — **sin API key y sin costo por uso**. Es como funciona el nuestro. Funciona porque OpenClaw puede manejar **Claude Code** por debajo (el backend `claude-cli`).
 
-El asistente te pregunta:
-- **Proveedor de modelo**: Anthropic (Claude), OpenAI, Google (Gemini)… elegí uno.
-- **API key**: pegás la tuya (la sacás de la web del proveedor). **Queda guardada en tu máquina**, nunca en este repo.
+**Pasos:**
+
+1. **Instalá Claude Code** y logueate con tu cuenta de Claude Max (una sola vez):
+   ```bash
+   # instalá Claude Code (ver https://claude.ai/code) y luego:
+   claude            # te pide iniciar sesión con tu cuenta Max en el navegador
+   ```
+2. **Corré el onboarding de OpenClaw:**
+   ```bash
+   openclaw onboard --install-daemon
+   ```
+   Cuando pregunte por el modelo, en vez de pegar una API key, vas a usar el backend de Claude Code. Dejá tu modelo principal como `claude-cli/...`. Si el onboarding no te lo ofrece directo, agregá esto a tu config (`~/.openclaw/openclaw.config.json5`):
+   ```json5
+   {
+     agents: {
+       defaults: {
+         model: { primary: "claude-cli/claude-sonnet-4-6" }, // o el modelo que te dé tu Claude Code (ej. opus)
+         cliBackends: {
+           "claude-cli": { bundleMcp: true }   // para que tu agente tenga herramientas
+         },
+       },
+     },
+   }
+   ```
+   > `bundleMcp: true` es lo que le da **herramientas** al agente (no solo texto).
 
 Verificá que quedó andando:
 ```bash
 openclaw gateway status     # debe decir que escucha en el puerto 18789
 ```
+
+### Alternativa: API key (si NO tenés Claude Max)
+
+Si preferís una API key clásica (Anthropic/OpenAI/Google), corré `openclaw onboard --install-daemon` y pegá tu key cuando la pida. **Queda en tu máquina**, nunca en este repo. Ojo: esto **sí cobra por uso**, a diferencia de la suscripción Max.
 
 ## 3) Conectar tu bot de Telegram
 

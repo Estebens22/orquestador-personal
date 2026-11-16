@@ -20,7 +20,7 @@ Está construido sobre **[OpenClaw](https://openclaw.ai)** (open source, gratis)
 👉 Seguí **[SETUP.md](SETUP.md)** — guía paso a paso, pensada para no-técnicos. En resumen:
 
 1. Instalás **OpenClaw** (un comando).
-2. Corrés el **onboarding** y pegás tu **API key** de un modelo (Anthropic/OpenAI/Google…).
+2. **El cerebro:** usás tu **suscripción Claude Max** (sin API key, sin costo por uso — vía Claude Code, como el nuestro) **o** una API key si preferís.
 3. Conectás tu **bot de Telegram** (el token de BotFather).
 4. Copiás el **`workspace/`** de este repo a tu OpenClaw (personalidad + skills).
 5. Conectás **tus herramientas** y listo: le hablás por Telegram.
