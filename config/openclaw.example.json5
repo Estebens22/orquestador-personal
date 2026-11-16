@@ -1,0 +1,15 @@
+// Ejemplo de configuración de OpenClaw. Copiá lo que necesites a tu
+// ~/.openclaw/openclaw.config.json5 y reemplazá los PLACEHOLDERS.
+// NUNCA pongas tus claves reales en un repo — este archivo es solo plantilla.
+{
+  channels: {
+    telegram: {
+      enabled: true,
+      botToken: "PEGA_AQUI_TU_TOKEN_DE_BOTFATHER",
+      dmPolicy: "pairing",                 // requiere aprobar quién te escribe
+      groups: { "*": { requireMention: true } },
+    },
+  },
+  // El modelo y su API key se configuran con `openclaw onboard` / `openclaw configure`.
+  // Quedan guardados en tu máquina (~/.openclaw), no acá.
+}

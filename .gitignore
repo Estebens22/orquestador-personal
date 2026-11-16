@@ -1,0 +1,7 @@
+.env
+node_modules/
+memory/
+*.log
+.DS_Store
+# datos locales del agente (nunca se publican)
+.openclaw/
