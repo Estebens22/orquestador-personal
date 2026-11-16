@@ -16,7 +16,7 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 
 ## 2) El cerebro: tu suscripción Claude Max (SIN API key) — recomendado
 
-Si ya pagás **Claude Max/Pro**, podés usar **esa misma suscripción** como el cerebro de tu agente — **sin API key y sin costo por uso**. Es como funciona el nuestro. Funciona porque OpenClaw puede manejar **Claude Code** por debajo (el backend `claude-cli`).
+Si ya pagás **Claude Max/Pro**, podés usar **esa misma suscripción** como el cerebro de tu agente — **sin API key y sin costo por uso**. Funciona porque OpenClaw puede manejar **Claude Code** por debajo (el backend `claude-cli`).
 
 **Pasos:**
 

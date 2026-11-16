@@ -33,7 +33,7 @@ No necesitás saber de terminal ni de "node". Dos opciones:
 👉 Seguí **[SETUP.md](SETUP.md)** — guía paso a paso. En resumen:
 
 1. Instalás **OpenClaw** (un comando).
-2. **El cerebro:** usás tu **suscripción Claude Max** (sin API key, sin costo por uso — vía Claude Code, como el nuestro) **o** una API key si preferís.
+2. **El cerebro:** usás tu **suscripción Claude Max** (sin API key, sin costo por uso — vía Claude Code) **o** una API key si preferís.
 3. Conectás tu **bot de Telegram** (el token de BotFather).
 4. Copiás el **`workspace/`** de este repo a tu OpenClaw (personalidad + skills).
 5. Conectás **tus herramientas** y listo: le hablás por Telegram.
