@@ -15,9 +15,22 @@ Está construido sobre **[OpenClaw](https://openclaw.ai)** (open source, gratis)
 - Con **tus herramientas** (LinkedIn, prospección, tu CRM, lo que conectes) como skills y connectors.
 - **Gratis y privado**: corre local, con el modelo y las llaves que vos elijas.
 
-## Cómo empezar
+## 🙌 ¿No sos técnico? (la forma más fácil)
 
-👉 Seguí **[SETUP.md](SETUP.md)** — guía paso a paso, pensada para no-técnicos. En resumen:
+No necesitás saber de terminal ni de "node". Dos opciones:
+
+- **Que tu Claude te instale todo:** abrí **[PARA-CLAUDE-DESKTOP.md](PARA-CLAUDE-DESKTOP.md)**, copiá el mensaje y pegalo en tu Claude. Te lleva de la mano, paso a paso, y si algo falla le pasás una captura y lo resuelve.
+- **Una sola línea:** abrí la app **Terminal** y pegá esto (instala todo solo):
+  ```bash
+  curl -fsSL https://raw.githubusercontent.com/Estebens22/orquestador-personal/main/bootstrap.sh | bash
+  ```
+  Al final te muestra 3 pasos cortos (login con tu Claude Max, tu token de Telegram, encender). Si te trabás, tu Claude te guía.
+
+---
+
+## Cómo empezar (manual, para quien quiera ver cada paso)
+
+👉 Seguí **[SETUP.md](SETUP.md)** — guía paso a paso. En resumen:
 
 1. Instalás **OpenClaw** (un comando).
 2. **El cerebro:** usás tu **suscripción Claude Max** (sin API key, sin costo por uso — vía Claude Code, como el nuestro) **o** una API key si preferís.
